@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100">
+
+<div class="max-w-7xl mx-auto p-5">
+    <nav class="bg-white shadow-lg p-4 flex justify-between items-center rounded-lg mb-12">
+        <div class="flex items-center gap-2">
+          <img src="assets/logo.png" alt="Logo" class="w-10 h-10">
+          <h1 class="text-2xl font-bold text-slate-700">Dev<span class="text-green-500">Board</span></h1>
+        </div>
+        <div class="flex items-center gap-5">
+          <button class="bg-slate-100 text-black font-bold px-4 py-2 rounded-full flex items-center gap-2">
+            <img src="assets/checkbox.png" alt="">
+            23
+          </button>
+          <div class="rounded-full w-10 h-10 bg-gradient-to-r from-purple-400 to-blue-500 flex items-center justify-center cursor-pointer">
+           <button><img src="assets/theme-btn.png" alt=""></button> 
+          </div>
+        </div>
+      </nav>
+    <!-- Main Layout -->
+    <div class="grid grid-cols-4 gap-4">
+        <!-- Left Side (Task Section) -->
+        <div class="col-span-3">
+            <div class="grid grid-cols-3 gap-4">
+                <!-- Top Info Cards -->
+                <div class="bg-white p-4 rounded-lg shadow flex gap-2">
+                    <img class="w-[30px] h-[30px]" src="assets/checkbox.png" alt="">
+                    <h3 class="text-lg font-semibold">Task Assigned <br><span class="text-3xl font-bold text-blue-600">6</span></h3>
+                    
+                </div>
+                
+                    <button id="next-page" type="button" class="cursor-pointer text-center flex flex-col items-center">
+                        <div class="flex bg-gradient-to-r from-blue-500 to-indigo-500 p-4 rounded-lg text-white shadow">
+                        <img class="w-[79px] h-[79px]" src="assets/board.png" alt="">
+                        <h3 class="text-lg font-semibold">Discover Something New Today!</h3>
+                        </div>
+                    </button>                                          
+                
+                <div class=" flex justify-center items-center bg-white gap-4 p-4 rounded-lg shadow">
+                    <img class="w-[40px] h-[40px]" src="assets/calender.png" alt="">
+                    <h3 class="text-lg font-semibold">Wed,<br> <span class="text-xl font-bold text-green-600">Jul 28 2025</span></h3>
+                </div>
+            </div>
+
+            <!-- Task Cards -->
+            <div class="grid grid-cols-3 gap-4 mt-5">
+                <div  class="bg-white p-4 rounded-lg shadow">
+                    <h4 class="bg-slate-100 text-blue-600 font-semibold w-[100px] text-center rounded-lg">ShopEase</h4>
+                    <h3 class="font-bold text-xl">Fix Mobile Button Issue</h3>
+                    <p class="bg-slate-100 text-sm text-gray-500 text-center rounded p-4 ">Debug using Chrome DevTools,<br> check for overlappi...</p>
+                    <div class="flex mt-5 justify-between justify-center items-center">
+                    <p class="mt-3 text-sm">Deadline<br> 21 March 2025</p>
+                    <button class="bg-blue-600 text-white px-2 rounded h-10">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h4 class="bg-slate-100 text-blue-600 font-semibold w-[100px] text-center rounded-lg">ShopEase</h4>
+                    <h3 class="font-bold text-xl">Fix Mobile Button Issue</h3>
+                    <p class="bg-slate-100 text-sm text-gray-500 text-center rounded ">Debug using Chrome DevTools,<br> check for overlappi...</p>
+                    <div class="flex mt-5 justify-between justify-center items-center">
+                    <p class="mt-3 text-sm">Deadline<br> 21 March 2025</p>
+                    <button class="bg-blue-600 text-white px-2 rounded h-10">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h4 class="bg-slate-100 text-blue-600 font-semibold w-[100px] text-center rounded-lg">ShopEase</h4>
+                    <h3 class="font-bold text-xl">Fix Mobile Button Issue</h3>
+                    <p class="bg-slate-100 text-sm text-gray-500 text-center rounded ">Debug using Chrome DevTools,<br> check for overlappi...</p>
+                    <div class="flex mt-5 justify-between justify-center items-center">
+                    <p class="mt-3 text-sm">Deadline<br> 21 March 2025</p>
+                    <button class="bg-blue-600 text-white px-2 rounded h-10">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h4 class="bg-slate-100 text-blue-600 font-semibold w-[100px] text-center rounded-lg">ShopEase</h4>
+                    <h3 class="font-bold text-xl">Fix Mobile Button Issue</h3>
+                    <p class="bg-slate-100 text-sm text-gray-500 text-center rounded ">Debug using Chrome DevTools,<br> check for overlappi...</p>
+                    <div class="flex mt-5 justify-between justify-center items-center">
+                    <p class="mt-3 text-sm">Deadline<br> 21 March 2025</p>
+                    <button class="bg-blue-600 text-white px-2 rounded h-10">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h4 class="bg-slate-100 text-blue-600 font-semibold w-[100px] text-center rounded-lg">ShopEase</h4>
+                    <h3 class="font-bold text-xl">Fix Mobile Button Issue</h3>
+                    <p class="bg-slate-100 text-sm text-gray-500 text-center rounded ">Debug using Chrome DevTools,<br> check for overlappi...</p>
+                    <div class="flex mt-5 justify-between justify-center items-center">
+                    <p class="mt-3 text-sm">Deadline<br> 21 March 2025</p>
+                    <button class="bg-blue-600 text-white px-2 rounded h-10">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h4 class="bg-slate-100 text-blue-600 font-semibold w-[100px] text-center rounded-lg">ShopEase</h4>
+                    <h3 class="font-bold text-xl">Fix Mobile Button Issue</h3>
+                    <p class="bg-slate-100 text-sm text-gray-500 text-center rounded ">Debug using Chrome DevTools,<br> check for overlappi...</p>
+                    <div class="flex mt-5 justify-between justify-center items-center">
+                    <p class="mt-3 text-sm">Deadline<br> 21 March 2025</p>
+                    <button class="bg-blue-600 text-white px-2 rounded h-10">Completed</button>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <!-- Right Side (Activity Log) -->
+        <div class="bg-white p-5 rounded-lg shadow">
+            <div class=" grid grid-cols-1 justify-center items-center">
+            <div class="flex justify-center items-center gap-2">
+            <img class="w-[20px] h-[20px]" src="assets/activity.png" alt="">
+            <h3 class="text-lg font-semibold mb-3">Activity Log</h3>
+           </div>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded mb-5">Clear History</button>
+           </div>
+            <div class="space-y-3">
+                <div class="bg-slate-100 p-3 rounded">
+                    You have completed the task Add Dark Mode at 12:48:15 PM
+                </div>
+                <div class="bg-slate-100 p-3 rounded">
+                    You have completed the task Add Dark Mode at 12:48:15 PM
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
