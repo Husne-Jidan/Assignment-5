@@ -23,19 +23,21 @@ document.querySelector("#dynamic-date").innerText = `${month} ${date} ${year}`;
   let navbarCount = 23;
   
   completedButton.forEach((button) => {
-    button.addEventListener("click", function (event) {
-      event.preventDefault();
+    button.addEventListener("click", function (Change) {
+      Change.preventDefault();
   
       alert("Board updated successfully!!");
   
       button.disabled = true;
       button.classList.add("bg-gray-400", "cursor-not-allowed");
-      button.innerText = "Completed ✔️";
+      button.innerText = "Completed";
   
       taskCount--;
+
       if (taskCount === 0){
         alert("You completed all tasks");
       }
+      //btn disable and task assign value deduct finish.
       document.querySelector(".text-3xl").innerText = taskCount;
   
       navbarCount++;
@@ -43,8 +45,8 @@ document.querySelector("#dynamic-date").innerText = `${month} ${date} ${year}`;
         <img src="assets/checkbox.png" alt="">
         ${navbarCount}
       `;
-  
-      let taskTitle = button.parentElement.parentElement.querySelector("h3").innerText;
+    // nav btn value added finish.
+      let taskTitlePass = button.parentElement.parentElement.querySelector("h3").innerText;
   
       let currentTime = new Date();
       let hours = currentTime.getHours();
@@ -57,17 +59,18 @@ document.querySelector("#dynamic-date").innerText = `${month} ${date} ${year}`;
   
       let activity = document.createElement("div");
       activity.classList.add("bg-slate-100", "p-3", "rounded");
-      activity.innerText = `You have completed the task ${taskTitle} at ${time}`;
+      activity.innerText = `You have completed the task ${taskTitlePass} at ${time}`;
       activityLog.appendChild(activity);
     });
   });
+  // real time display in the activity log and get the title from card title finish.
   
-  // ✅ Clear History Button
+  // Clear All Activity Logs
   clearButton.addEventListener("click", function () {
-    activityLog.innerHTML = ""; // Clear All Activity Logs
+    activityLog.innerHTML = ""; 
   });
   
-
+// Change Background Color fro challenge part
   function getRandomColor() {
     let letters = "0123456789ABCDEF";
     let color = "#";
@@ -77,10 +80,9 @@ document.querySelector("#dynamic-date").innerText = `${month} ${date} ${year}`;
     return color;
   }
   
-  // 🎯 Theme Button Click
   themeBtn.addEventListener("click", function () {
     let randomColor = getRandomColor();
-    document.body.style.background = randomColor; // Change Background Color
+    document.body.style.background = randomColor; 
   });
 
 
