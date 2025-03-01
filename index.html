@@ -20,7 +20,7 @@
             23
           </button>
           <div class="rounded-full w-10 h-10 bg-gradient-to-r from-purple-400 to-blue-500 flex items-center justify-center cursor-pointer">
-           <button><img src="assets/theme-btn.png" alt=""></button> 
+           <button id="themeBtn"><img src="assets/theme-btn.png" alt=""></button> 
           </div>
         </div>
       </nav>
@@ -45,10 +45,13 @@
                         </div>
                     </button>                                         
                 
-                <div class=" flex justify-center items-center bg-white gap-4 p-4 rounded-lg shadow">
-                    <img class="w-[40px] h-[40px]" src="assets/calender.png" alt="">
-                    <h3 class="text-lg font-semibold">Wed,<br> <span class="text-xl font-bold text-green-600">Jul 28 2025</span></h3>
-                </div>
+                    <div class="flex justify-center items-center bg-white gap-4 p-4 rounded-lg shadow">
+                        <img class="w-[40px] h-[40px]" src="assets/calender.png" alt="">
+                        <h3 class="text-lg font-semibold"><span id="dynamic-day"></span> <br>
+                            <span id="dynamic-date" class="text-xl font-bold text-green-600"></span>
+                        </h3>
+                    </div>
+                    
             </div>
 
             <!-- Task Cards -->
