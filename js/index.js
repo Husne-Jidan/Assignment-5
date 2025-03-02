@@ -1,5 +1,5 @@
-document.getElementById("next-page").addEventListener("click", function (event) {
-    event.preventDefault();
+document.getElementById("next-page").addEventListener("click", function () {
+    //event.preventDefault();
     window.location.href = "next.html";
   });
   
@@ -15,7 +15,7 @@ document.querySelector("#dynamic-date").innerText = `${month} ${date} ${year}`;
 
 
   let taskCount = 6;
-  let activityLog = document.querySelector(".activity-log"); // Fix Selection Here
+  let activityLog = document.querySelector(".activity-log"); 
   let navbarButton = document.querySelector("nav button");
   let completedButton = document.querySelectorAll("#task");
   let clearButton = document.getElementById("clear-history");
